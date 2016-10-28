@@ -37,6 +37,18 @@ class MDSROTemplate(object):
     def version(self):
         return self._version
 
+    @property
+    def NoRunStart(self):
+        return self._api.NoRunStart
+
+    @property
+    def NoRunStop(self):
+        return self._api.NoRunStop
+
+    @property
+    def NoEventDescriptors(self):
+        return self._api.NoEventDescriptors
+
     @version.setter
     def version(self, val):
         if self._api is not None:
